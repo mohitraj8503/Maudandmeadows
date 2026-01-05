@@ -1,0 +1,1 @@
+web: python -m resort_backend.main

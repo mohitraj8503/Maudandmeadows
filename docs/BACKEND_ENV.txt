@@ -1,0 +1,64 @@
+# ========================================
+# BACKEND ENVIRONMENT VARIABLES
+# ========================================
+# For Railway/Render/Heroku deployment
+# Add these in your platform's environment variables section
+# ========================================
+
+# Database Configuration (REQUIRED)
+MONGODB_URL=mongodb+srv://username:password@cluster.mongodb.net/
+DATABASE_NAME=resort_db
+
+# Frontend URL (REQUIRED - Update after deploying frontend)
+FRONTEND_URL=https://your-app.vercel.app
+
+# Payment Gateway (REQUIRED for bookings)
+RAZORPAY_KEY_ID=rzp_test_xxxxx
+RAZORPAY_KEY_SECRET=your_razorpay_secret_key
+
+# Optional
+ADMIN_API_KEY=your_secure_admin_key
+
+# ========================================
+# SETUP INSTRUCTIONS:
+# ========================================
+# 
+# 1. GET MONGODB URL:
+#    - Go to https://www.mongodb.com/cloud/atlas
+#    - Create free account and cluster
+#    - Click "Connect" → "Connect your application"
+#    - Copy connection string
+#    - Replace <password> with your database password
+#
+# 2. GET RAZORPAY KEYS:
+#    - Go to https://razorpay.com/
+#    - Sign up for account
+#    - Settings → API Keys
+#    - Generate Test keys (for development)
+#    - Copy Key ID and Secret
+#
+# 3. DEPLOYMENT ORDER:
+#    - Deploy backend first with these variables
+#    - Get backend URL
+#    - Deploy frontend with backend URL
+#    - Update FRONTEND_URL here with Vercel URL
+#    - Redeploy backend
+#
+# ========================================
+# PLATFORM-SPECIFIC INSTRUCTIONS:
+# ========================================
+#
+# RAILWAY:
+# - Dashboard → Your Service → Variables tab
+# - Click "New Variable" for each
+# - Or click "Raw Editor" and paste all
+#
+# RENDER:
+# - Dashboard → Your Service → Environment tab
+# - Add each variable in "Environment Variables" section
+#
+# HEROKU:
+# - Dashboard → Settings → Config Vars → Reveal Config Vars
+# - Or use CLI: heroku config:set KEY=VALUE
+#
+# ========================================

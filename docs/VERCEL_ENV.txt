@@ -1,0 +1,20 @@
+# ========================================
+# VERCEL ENVIRONMENT VARIABLES
+# ========================================
+# Copy and paste this into Vercel:
+# Dashboard → Your Project → Settings → Environment Variables
+# Click "Paste .env" and paste everything below
+# ========================================
+
+# Frontend API URL - Replace with your deployed backend URL
+VITE_API_URL=https://your-backend-url.com
+
+# ========================================
+# INSTRUCTIONS:
+# ========================================
+# 1. Deploy your backend first (Railway/Render/Heroku)
+# 2. Get the backend URL (e.g., https://maudandmeadows-backend.railway.app)
+# 3. Replace "https://your-backend-url.com" with your actual backend URL
+# 4. Make sure there's NO trailing slash (/)
+# 5. Paste this into Vercel and deploy
+# ========================================
